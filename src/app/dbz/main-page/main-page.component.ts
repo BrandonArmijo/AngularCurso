@@ -1,23 +1,24 @@
-import { Component, OnInit } from '@angular/core';
+import { Component } from '@angular/core';
+import {Personaje} from "../interfaces/dbz.interface";
 
-interface Personaje{
-  nombre: string;
-  poder: number;
-}
 @Component({
   selector: 'app-main-page',
   templateUrl: './main-page.component.html'
 })
 export class MainPageComponent{
 
+
+
   nuevo: Personaje = {
-    nombre: 'Trunks',
-    poder: 14000
+    nombre: 'Maestro Roshi',
+    poder: 1000
   }
 
-  
-  agregar(){
-  console.log(this.nuevo);
+
+  constructor() {
+
   }
+
+
 
 }
